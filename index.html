@@ -63,6 +63,9 @@
       request.send();
     }
 
+    // Safari iOS requires a touchstart listener to honour :active on touch
+    document.addEventListener('touchstart', function(){}, {passive: true});
+
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js');
     }
