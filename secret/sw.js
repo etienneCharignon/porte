@@ -1,4 +1,4 @@
-const CACHE = 'porte-v1.1';
+const CACHE = 'porte-v1.2';
 const ASSETS = [
   '.',
   'index.html',
